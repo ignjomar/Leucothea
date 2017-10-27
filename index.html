@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="lbb.css" />
+		<title>Leucothea Blood Bank</title>
+		
+
+	</head>
+	
+	<body>
+	</div class="main">
+		<div id="top">
+			<li><a href="http://facebook.com"><img src="fb.png" class="fb"/></a></li>
+			<li><a href="http://twitter.com"><img src="twit.png" class="fb"/></a></li>
+			<li><a href="http://vimeo.com"><img src="vmeo.png" class="fb"/></a></li>
+			<li><a href="http://flickr.com"><img src="flick.png" class="fb"/></a></li>
+			<input type="text" name="search" class="inputss">
+		</div>
+		
+		<header>
+			<center><img src="blood.png" height="600px" width="55%"/></center>
+			<h1 class="h1">Give Blood. Save Lives.</h1>
+			<div id="banner_description">
+				<a href= "bloodbenefits.html" class="red_button">See article <img src="small_arrow.png" alt="" /></a>
+            </div>
+			
+			<button id="myBtn" class="btn">Login</button>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h1 id="title">Sign up</h1>
+					<form action = "login.php" method = "post">
+						<span style="float: left;">
+							<label>Username: </label><input class="inputs" type="text" name="user" required="required"><br>
+							<label>Password: </label><input class="inputs" type="password" name="pass" required="required"><br>
+							<input type="Submit" name="submit" value="Log in" class="btnSub">
+						</span>
+					</form>
+				</div>
+			</div>
+			
+			<button id="myBtn2" class="btn1">Register</button>
+			<div id="myModal2" class="modal">
+				<div class="modal-content2">
+					<span class="close2">&times;</span>
+					<h1 id="title">Sign up</h1>
+					<form action = "regiterUser.php" method = "post">
+						<span style="float: left;">
+							<label>Username: </label><input type="text" name="user" class="inputs" required="required"><br>
+							<label>Password:</label> <input type="password" name="pass" class="inputs" required="required"><br>
+							<label>First Name:</label> <input type="text" name="Fname" class="inputs" required="required"><br>
+							<label>Middle Name:</label> <input type="text" name="Mname" class="inputs"><br>
+							<label>Last Name:</label> <input type="text" name="Lname" class="inputs" required="required"><br>
+							<input type="Submit"  name="submit" value="Register" class="btnSub2">
+						</span>
+					</form>
+				</div>
+			</div>
+		</header>
+		
+		<section>
+			<article><center>
+				<h1 id="about">About Us</h1>
+				<img src="logo.png" />
+				<br><br>
+				<p id="content">Born officially in 2017, but with roots that traces back to the revolutionary days, the Leucothea Blood Bank has truly become one of the blood bank in the country, committed to provide quality life-saving services that protect the life and dignity especially of indigent Filipinos in vulnerable situations.</p>
+				<p id="content">The story of the leucothea Blood Bank is the story of men and women from all walks of life who have dedicated themselves to the service of humanity. It is the tale of hundreds of thousands of ordinary people who devoted their time and resources to help the poorest of the poor. Professionally trained and truly compassionate, these men and women are ready to lend a helping hand to those in need – whoever, whenever and wherever they may be.</p>
+				<p id="content">It was developed for the reason to have a bank of blood that can access the different blood bank within the Metro Manila, so that you can easily transact and find blood that is capable and same with the blood you are finding. It composed of 6 blood banks around Metro Manila and collection of all the blood types. These blood centers serve more than 150 million people and provide blood products and services to more than 3,500 hospitals and healthcare facilities across Metro Manila.</p><br><br>
+			</article>
+		</section>
+		
+		<footer><center>
+			<p>We take pride in urging all Filipinos to take part in the heroism of the Leucothea Blood Bank by becoming a full-fledged member, volunteer, buyer, or donor. For more information</p>
+			<img src="location.png" />Polythecnic University of the Philippines<br>
+			<img src="phone.png" />  +63 9123456789<br>
+			<img src="email.png"/>  leucotheabloodbank@mail.com
+			<p>or browse through our website.</p><br><br><br><br>
+			<p>
+				<img src="facebook.png"/>
+				<img src="twitter.png"/>
+				<img src="vimeo.png"/>
+				<img src="flickr.png"/>
+			</p>
+			<p>Copyright &copy 2017 by Avie Barretto and Jomar Vedad</p>
+			<p>All rights reserved.</p>
+		</center></footer>
+		
+		<!-- register and login pop up screen -->
+		<script>
+			var modal = document.getElementById('myModal');
+			var btn = document.getElementById("myBtn");
+			var span = document.getElementsByClassName("close")[0];
+
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+			
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}	
+			
+			var modal2 = document.getElementById('myModal2');
+			var btn2 = document.getElementById("myBtn2");
+			var span = document.getElementsByClassName("close2")[0];
+	
+			btn2.onclick = function() {		
+				modal2.style.display = "block";	
+			}
+
+			span.onclick = function() {
+				modal2.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modal2) {
+					modal2.style.display = "none";
+				}
+			}
+		</script>
+	</div>
+	</body>
+</html>

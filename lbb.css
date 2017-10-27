@@ -1,0 +1,355 @@
+body
+{
+	background-color: rgba(0,0,0,0.5);
+}
+
+header
+{
+	margin:auto;
+	width: 98%;
+	height: 550px;
+	background-color: #555;
+	border-radius: 16px;
+}
+
+div li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+
+section
+{
+    margin: auto;
+	margin-top: 15px;
+    width: 98%;
+	border-radius: 16px;
+	padding-top: 10px;
+}
+
+.h1
+{
+	position: absolute;
+	left: 32%;
+	top:27%;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+
+#title
+{
+	font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: Bold;
+	color: grey;
+	text-align: center;
+}
+
+
+.btn
+{    
+    color: black; 
+	background-color: white;
+	padding: 20px;
+    text-align: center;
+	border-radius:12px;
+    display: inline-block;
+    font-size: 20px;
+	position: absolute;
+	opacity:1.5;
+	top: 65%;
+	right: 40%;
+}
+
+.btn1
+{    
+    color: white; 
+	background-color: green;
+	padding: 20px;
+    text-align: center;
+	border-radius:12px;
+    display: inline-block;
+    font-size: 20px;
+	position: absolute;
+	opacity:1.5;
+	top: 65%;
+	right: 51%;
+}
+
+
+/*div top*/
+#top
+{
+	position: fixed;
+	background-color: black;
+	width: 97%;
+	height: 5%;
+	padding: 10px 0px 10px 20px;
+}
+
+.fb
+{
+	opacity: 0.8;	
+	width: 30px;
+}
+
+.inputss 
+{
+    width: 10%;
+	height: 18%;
+	right: 1%;
+	position: absolute;
+	opacity: 0.5;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url("search.png");
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.inputss:focus 
+{
+    width: 20%;
+	opacity: 1;
+}
+/*end top*/
+
+
+/* The Modal (background) */
+.modal, .modal2 
+{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+	left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+}
+
+/* Modal Content */
+.modal-content
+{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 25%;
+	height: 38%
+}
+
+.modal-content2 
+{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 400px;
+	border-radius: 10px;
+}
+
+/* The Close Button */
+.close, .close2 
+{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close, .close2:hover,
+.close, .close2:focus 
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnSub
+{
+	background-color: green;
+	color: white;
+	padding: 20px;
+    text-align: center;
+	border-radius:12px;
+    display: inline-block;
+    font-size: 20px;
+	position: fixed;
+	opacity:1;
+	top: 44%;
+	right: 47%;
+}
+
+.btnSub2
+{
+	background-color: green;
+	color: white;
+	padding: 15px;
+    text-align: center;
+	border-radius:12px;
+    display: inline-block;
+    font-size: 20px;
+	position: fixed;
+	opacity:1;
+	top: 67%;
+	right: 47%;
+}
+
+/*Login modal*/
+.input 
+{
+    width: 10%;
+	height: 30%;
+	right: 1%;
+	position: absolute;
+	opacity: 0.7;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url("search.png");
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.input:focus 
+{
+    width: 25%;
+	opacity: 1;
+}
+
+.inputs 
+{
+    width: 25%;
+	height: 1px;	
+	opacity: 1;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+label 
+{
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	padding:5px;
+}​
+
+/*Slide images*/
+
+.mySlides {
+ padding-left: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 335%;
+  width: 50%;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+.prev {
+  left: -3%;
+}
+
+.wewewew {
+  position:relative;
+  left: -1%;
+  top: 5px;
+}
+
+
+#content {
+	font-family: 'BallparkWeiner', serif;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/*end of about us photos*/
+
+#about
+{
+	font-size: 70px;
+	color: rgb(70, 0, 2);
+}
+
+.section2
+{
+	background-image: url("blood.png")
+}
+
+footer
+{
+	font-family: Dayrom, serif;
+	font-weight: 2em;
+}
+
+footer img
+{
+	width: 2%;
+	left:45%;
+}
+
+
+.red_button
+{
+    display: inline-block;
+    height: 50%;
+    position: absolute;
+    right: 40px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#banner_description
+{
+    position: absolute;
+    bottom: 80px;
+    border-radius: 0px 0px 5px 5px;
+    width: 95%;
+    height: 10%;
+    padding: 5px;
+    color: white;
+    font-size: 0.8em;  
+}

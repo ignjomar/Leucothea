@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>	
+	<link rel="stylesheet" href="admin.css"/>
+	<title>Admin</title>
+<div id = "main_wrapper">
+	<header>
+		<center>
+		<div id="main_title">
+			<img src="logo.png" width="10%"/>
+            <h1>Leucothea</h1><br>
+            <h2>Blood Bank</h2>
+        </div>
+		</center>
+	</header><br><br>
+	<hr>
+
+	<body>
+	
+		<div class = "b1">
+			<h1>User's Registration</h1>
+			<br>
+			<form action = "deleteUser.php" method = "post">
+				<label>UserID: <input  type="text" name="userID"></input></label><br><br>
+				<input type="Submit"  name="submit" value="Delete" class="btnDelete"></input>
+			</form>
+			<center>
+				<button class="btnData"><a href = "http://localhost/new/userReg.php">SEE DATA</a></button>
+			</center>
+		</div>
+	
+		<div class = "b2">
+		<br>
+		<hr>
+			<h1>Donor's Information</h1>
+			<br>
+			<form action = "updateDonor.php" method = "post">
+				<label>DonorID: <input  type="text" name="donor"></input></label><br><br>
+				<label>Blood Type:
+				<select name="blood">
+					<option ="o+">O+</option>
+					<option ="o-">O-</option>
+					<option ="a+">A+</option>
+					<option ="a-">A-</option>
+					<option ="b+">B+</option>
+					<option ="b-">B-</option>
+					<option ="ab+">AB+</option>
+					<option ="ab-">AB-</option>
+				</select>
+				</label><br><br>
+				<input type="Submit"  name="submit" value="Update" class= "btnUpdate">
+			</form>
+			<br>
+			<br>
+			
+			<form action = "deleteDonor.php" method = "post">
+				<label>DonorID: <input  type="text" name="donor"></input></label><br><br>
+				<input type="Submit"  name="submit" value="Delete" class="btnDelete"></input>
+			</form>
+			
+			<center>
+				<button class="btnData"><a href = "http://localhost/new/donorInfo.php">SEE DATA</a></button>
+			</center>
+		</div>
+
+		<div class = "b3">
+		
+		<br><hr>
+			<h1> Buyer's Information</h1>
+			<form action = "updateBuyer.php" method = "post">
+				<label>Buyer ID: <input  type="text" name="buyer"></input></label><br><br>
+				<label>Insert Amount: <input  type="text" name="amount"></input></label><br>
+				<input type="Submit"  name="submit" value="Update" class="btnUpdate"><br><br>
+			</form><br>
+		
+			<form action = "deleteBuyer.php" method = "post">
+				<label>BuyerID: <input  type="text" name="buyer"></input></label><br><br>
+				<input type="Submit"  name="submit" value="Delete" class="btnDelete"></input>
+			</form><br><br>
+			
+			<center>
+				<button class="btnData"><a href = "http://localhost/new/buyerInfo.php">SEE DATA</a></button>
+			</center>
+		</div>
+	
+	</body>
+	
+	
+	<aside>
+		<h1>Admin</h1>
+		<br><br><hr>
+		<h3>User's Registration</h3>
+		<hr>
+		<h3>Donor's Information</h3>
+		<hr>
+		<h3>Buyer's Information</h3>
+		<hr>
+	</aside>
+</div>
+</html>

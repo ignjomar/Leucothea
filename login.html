@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="proj.css"/>
+		<title>Login</title>		
+	</head>
+	
+	<body>
+		<header>
+			<div>
+				<div class="banner">
+					<form>
+						<input  type="text" name="search" class="input">
+						<a href="index.html"  id="a">Log Out</a>
+					</form>
+				</div>
+		</header>
+		
+		<div>
+			<center><img src="heart.gif" id="logo1" width="60%" />
+			<button id="myBtn" class="button1">Donate</button>
+			<div id="myModal" class="modal">
+				<div class="modal-content" action="donor.php" method="post">
+					<span class="close">&times;</span>
+					<h1 id="title">Sign up</h1>
+					<form action = "donor.php" method = "post">
+					<span style="float: left;">
+						<label>First Name: </label><input class="inputs" type="text" name="FName" required="required"><br>
+						<label>Middle Name: </label><input class="inputs" type="text" name="MName"><br>
+						<label>Last Name: </label><input class="inputs" type="text" name="LName" required="required"><br>
+						<label>Age: </label><input class="inputs" type="text" name="Age" required="required"><br>
+						<label>Address: </label><input class="inputs"type="text" name="Add" required="required"><br>
+						<label>Contact Number: </label><input class="inputs" type="text" name="ContactNo" required="required"><br>
+						<button type="Submit" class="btnSub">Submit</button>
+					</span>
+					</form>
+				</div>
+			</div>
+			
+			<button id="myBtn2" class="button2">Buy</button>
+			<div id="myModal2" class="modal2">
+				<div class="modal-content2" action="buyer.php" method="post">
+					<form action = "buyer.php" method = "post">
+						<span class="close2">&times;</span>
+						<h1 id="title">Sign up</h1>
+						<center><span style="float: left;">
+							<label>First Name:</label> <input type="text" name="fname" required="required"><br>
+							<label>Middle Name:</label> <input type="text" name="mname"><br>
+							<label>Last Name:</label> <input type="text" name="lname" required="required"><br>
+							<label>Age:</label> <input type="text" name="age" required="required"><br>
+							<label>Location: </label><input type="text" name="add" required="required"><br>
+							<label>Contact Number:</label> <input type="text" name="contactNo" required="required"><br>
+							<label>Blood Type:</label> <select name="bloodtype">
+								<option ="o+">O+</option>
+								<option ="o-">O-</option>
+								<option ="a+">A+</option>
+								<option ="a-">A-</option>
+								<option ="b+">B+</option>
+								<option ="b-">B-</option>
+								<option ="ab+">AB+</option>
+								<option ="ab-">AB-</option>
+							</select><br>
+							<label>Quantity:</label> <input type="text" name="qty" required="required"><br>
+							<button type="Submit" class="btnSub2">Submit</button>
+						</span></center>
+					</form>
+				</div>
+			</div>
+		</div><br><br>
+		
+		<footer><center>
+			<p>We take pride in urging all Filipinos to take part in the heroism of the Leucothea Blood Bank by becoming a full-fledged member, volunteer, buyer, or donor. For more information</p>
+			<img src="location.png" />Polythecnic University of the Philippines<br>
+			<img src="phone.png" />  +63 9123456789<br>
+			<img src="email.png"/>  leucotheabloodbank@mail.com
+			<p>or browse through our website.</p><br><br><br><br>
+			<p>
+				<img src="facebook.png"/>
+				<img src="twitter.png"/>
+				<img src="vimeo.png"/>
+				<img src="flickr.png"/>
+			</p>
+			<p>Copyright &copy 2017 by Avie Barretto and Jomar Vedad</p>
+			<p>All rights reserved.</p>
+		</center></footer>
+	
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+	
+			// When the user clicks the button, open the modal 	
+			btn.onclick = function() {		
+				modal.style.display = "block";	
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			
+			// Get the modal
+			var modal2 = document.getElementById('myModal2');
+
+			// Get the button that opens the modal
+			var btn2 = document.getElementById("myBtn2");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close2")[0];
+	
+			// When the user clicks the button, open the modal 	
+			btn2.onclick = function() {		
+				modal2.style.display = "block";	
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal2.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal2) {
+					modal2.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
